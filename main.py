@@ -29,4 +29,33 @@ def agregar_habito():
     df.to_csv(CSV_FILE, index=False)
     
     print ("Habito agregado exitosamente.")
+
+def ver_habitos():
+    df = pd.read_csv(CSV_FILE)
+    if df.empty:
+        print("No hay hábitos registrados.")
+        return
+    print(df)
+
+def main():
+    archivo_existente()
     
+    while True:
+        print("\n1. Agregar hábito")
+        print("2. Ver hábitos")
+        print("3. Salir")
+        
+        opcion = input("Selecciona una opción: ").strip()
+        
+        if opcion == "1":
+            agregar_habito()
+        elif opcion == "2":
+            ver_habitos()
+        elif opcion == "3":
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción no válida. Intenta de nuevo.")
+            
+if __name__ == "__main__":
+    main()
