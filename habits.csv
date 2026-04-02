@@ -1,3 +1,4 @@
-fecha,ejercicio,lectura,horas_sueno,estado_animo
-2026-03-30,s,15.0,7.5,10.0
-2026-03-31,EDITAR,EDITAR,EDITAR,10.0
+fecha,ejercicio,lectura,horas_sueno,agua,consumo,productividad,estado_animo
+2026-03-30,s,15.0,7.5,2.5L,s,8,10.0
+2026-03-31,s,3.0,7.5,s,n,7,10.0
+2026-04-01,editar,EDITAR,EDITAR,editar,n,8,10.0
